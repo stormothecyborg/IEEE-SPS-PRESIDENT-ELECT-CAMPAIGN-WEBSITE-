@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+  --primary: #ebb325;
+  --primary-dark:#ebb325;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -108,13 +108,14 @@ body {
   font-weight: 800;
   line-height: 1.2;
   color: var(--gray-900);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .hero h2 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 0.9;
   color: var(--gray-900);
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 .hero h1 .highlight {
@@ -149,13 +150,13 @@ body {
 /* About Section */
 .about {
   padding: 4rem 0;
-  background: #263d70;
+  background: rgb(7, 24, 61)
 }
 
 .about h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: white;
+  color: #ebb325;
   margin-bottom: 3rem;
   /* text-decoration: underline; */
 }
@@ -180,7 +181,7 @@ body {
 .stupendous h2{
   text-align: center;
   font-size: 1.25rem;
-  color: white;
+  color: #ebb325;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 
@@ -230,7 +231,7 @@ body {
 .vision h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: var(--gray-900);
+  color: rgb(7, 24, 61);
   margin-bottom: 1rem;
 }
 
@@ -238,6 +239,13 @@ body {
   text-align: center;
   font-size: 1.25rem;
   color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+.section-subtitle1 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(7, 24, 61);
+  font-weight: bold;
   margin-bottom: 3rem;
 }
 
@@ -257,7 +265,7 @@ body {
   top: 0;
   width: 3rem;
   height: 3rem;
-  background: var(--primary);
+  background: #ebb325;
   border-radius: 0.375rem;
   display: flex;
   align-items: center;
@@ -273,6 +281,29 @@ body {
 
 .vision-card p {
   color: var(--gray-500);
+}
+
+/*statement*/
+.statement {
+  padding: 2rem 0;
+  background: rgb(7, 24, 61)
+}
+
+.statement h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #ebb325;
+  margin-bottom: 3rem;
+  /* text-decoration: underline; */
+}
+
+.statement p {
+  text-align: center;
+  font-size: 0.75rem;
+  text-align: justify;
+  color: white;
+  margin-bottom: 1.5rem;
+  /* text-decoration: underline; */
 }
 
 /* Experience Section */
@@ -327,6 +358,7 @@ body {
   font-size: 1.25rem;
   color: var(--gray-900);
   margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .timeline-content p {
@@ -421,14 +453,17 @@ body {
 /* Contact Section */
 .contact {
   padding: 4rem 0;
-  background: var(--gray-50);
+  background: rgb(7, 24, 61);
 }
 
 .contact h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: var(--gray-900);
+  color: #ebb325;
   margin-bottom: 3rem;
+}
+.contact p{
+  color: white;
 }
 
 .contact-links {
@@ -448,7 +483,7 @@ body {
 
 /* Footer */
 footer {
-  background: white;
+  background: gray;
   padding: 3rem 0;
   text-align: center;
   color: var(--gray-400);
