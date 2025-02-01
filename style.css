@@ -177,6 +177,23 @@ body {
   color: white;
   text-align: left;
 }
+.stupendous h2{
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+.about-end p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
 
 .stats-grid {
   display: grid;
@@ -187,7 +204,7 @@ body {
 
 .stat-card {
   background: white;
-  padding: 5 rem;
+  padding: 10px;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -201,8 +218,6 @@ body {
 .stat-label {
   font-size: 0.875rem;
   font-weight: 500;
-  margin-top: 1rem;
-
   color: var(--gray-900);
 }
 
