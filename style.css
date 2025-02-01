@@ -154,7 +154,7 @@ body {
 }
 
 .about h2 {
-  text-align: center;
+  text-align: justify;
   font-size: 2.25rem;
   color: #ebb325;
   margin-bottom: 3rem;
@@ -176,7 +176,7 @@ body {
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
   color: white;
-  text-align: left;
+  text-align: justify;
 }
 .stupendous h2{
   text-align: center;
@@ -299,7 +299,7 @@ body {
 
 .statement p {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   text-align: justify;
   color: white;
   margin-bottom: 1.5rem;
@@ -464,6 +464,7 @@ body {
 }
 .contact p{
   color: white;
+  text-align: center;
 }
 
 .contact-links {
