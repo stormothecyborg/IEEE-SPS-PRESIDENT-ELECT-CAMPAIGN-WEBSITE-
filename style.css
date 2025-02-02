@@ -97,6 +97,17 @@ body {
 }
 
 /* Hero Section */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem; /* Reduce heading size */
+    line-height: 1.2; /* Adjust spacing */
+  }
+  .hero p {
+    font-size: 1rem;
+    max-width: 90%; /* Prevent text from stretching too much */
+  }
+}
+
 .hero {
   padding: 8rem 0 4rem;
   background: white;
@@ -129,7 +140,7 @@ body {
   font-size: 1.25rem;
   color: var(--gray-500);
   margin-bottom: 2rem;
-  line-height: 0.5;
+  line-height: 1.5;
 }
 
 .cta-button {
