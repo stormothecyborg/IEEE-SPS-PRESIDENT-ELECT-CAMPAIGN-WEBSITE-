@@ -618,7 +618,7 @@ footer {
   }
 
   .mobile-menu-btn {
-    display: none;
+    display: block;
   }
 
   .about-grid {
