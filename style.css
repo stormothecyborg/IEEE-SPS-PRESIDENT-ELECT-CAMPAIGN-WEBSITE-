@@ -107,14 +107,14 @@ body {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  color: var(--gray-900);
+  color: rgb(7, 24, 61);
   margin-bottom: 1.25rem;
 }
 .hero h2 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 0.9;
-  color: var(--gray-900);
+  color: rgb(7, 24, 61);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -315,7 +315,7 @@ body {
 .experience h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: var(--gray-900);
+  color: rgb(7, 24, 61);
   margin-bottom: 3rem;
 }
 
@@ -346,13 +346,22 @@ body {
   left: 0;
   width: 3rem;
   height: 3rem;
-  background: var(--primary);
-  border-radius: 50%;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
+
+.timeline-icon img {
+  width: 50px; /* Reduce size */
+  height: 50px;
+  border-radius: 50%; 
+  object-fit: contain; /* Ensures logos fit well */
+  background: white; /* Ensures good visibility */
+  padding: 3px; /* Adds spacing around the logo */
+}
+
 
 .timeline-content h3 {
   font-size: 1.25rem;
@@ -371,7 +380,7 @@ body {
 }
 
 /* Publications Section */
-.publications {
+/* .publications {
   padding: 4rem 0;
   background: var(--gray-50);
 }
@@ -408,7 +417,7 @@ body {
 .publication-card .year {
   font-size: 0.875rem;
   color: var(--primary);
-}
+} */
 
 /* Endorsements Section */
 .endorsements {
@@ -419,7 +428,7 @@ body {
 .endorsements h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: var(--gray-900);
+  color: rgb(7, 24, 61);
   margin-bottom: 3rem;
 }
 
@@ -429,7 +438,7 @@ body {
 }
 
 .endorsement-card {
-  background: var(--gray-50);
+  background: var(--yellow-50);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -440,9 +449,19 @@ body {
   margin-bottom: 1rem;
 }
 
+.author {
+  text-align: center; /* Centers text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically if needed */
+}
+
+
 .author .name {
   font-weight: 500;
   color: var(--gray-900);
+  
 }
 
 .author .title {
@@ -487,7 +506,7 @@ footer {
   background: gray;
   padding: 3rem 0;
   text-align: center;
-  color: var(--gray-400);
+  color: white;
 }
 
 /* Responsive Design */
@@ -537,11 +556,112 @@ footer {
     right: -1.5rem;
   }
 
+  .timeline-content {
+    margin-left: 5rem; /* Push content further from the center */
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: 6rem; /* Move left-side content further right */
+    }
+  
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-right: 6rem; /* Move right-side content further left */
+    }
+  }
+  
+
   .publications-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .endorsements-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    max-width: 600px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the grid */
   }
+  
+  .endorsement-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .endorsement-image img {
+    width: 200px;  /* Adjust size as needed */
+    height: auto;
+     /* Makes it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--primary);
+  }
+  
+  .about-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 1rem; /* Add space between buttons */
+    margin-top: 2rem;
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid white; /* White border */
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px; /* Rounded corners */
+    background: transparent; /* Transparent background */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    background: white; /* White background on hover */
+    color: rgb(7, 24, 61); /* Dark text on hover */
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* Space between icon and text */
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .contact-info a:hover {
+    color: var(--primary); /* Change color on hover */
+  }
+  
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-icon img {
+    width: 24px; /* Size of LinkedIn image */
+    height: 24px;
+    object-fit: contain;
+  }
+  
+
+  
 }
