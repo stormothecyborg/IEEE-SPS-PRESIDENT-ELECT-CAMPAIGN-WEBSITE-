@@ -97,17 +97,6 @@ body {
 }
 
 /* Hero Section */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem; /* Reduce heading size */
-    line-height: 1.2; /* Adjust spacing */
-  }
-  .hero p {
-    font-size: 1rem;
-    max-width: 90%; /* Prevent text from stretching too much */
-  }
-}
-
 .hero {
   padding: 8rem 0 4rem;
   background: white;
@@ -612,6 +601,9 @@ footer {
     justify-content: center; /* Center the buttons */
     gap: 1rem; /* Add space between buttons */
     margin-top: 2rem;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align buttons */
+    gap: 0.5rem; /* Reduce gap for better spacing */
   }
   
   .custom-button {
@@ -625,6 +617,8 @@ footer {
     border-radius: 25px; /* Rounded corners */
     background: transparent; /* Transparent background */
     transition: all 0.3s ease-in-out;
+    width: 80%; /* Make buttons wider on mobile */
+    text-align: center; /* Center text */
   }
   
   .custom-button:hover {
