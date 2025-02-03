@@ -45,87 +45,57 @@
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  padding: 0 1rem;
-}
-
-/* Desktop Nav: Show navbar links, hide mobile menu button */
-.nav-container {
+  }
+  
+  .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.nav-links {
-  display: flex;  /* Show links on desktop */
-}
-
-.nav-links a {
-  color: var(--gray-600);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--primary);
-}
-
-/* Mobile Menu Button: Hidden by default */
-.mobile-menu-btn {
-  display: none;
-}
-
-/* Mobile View: Hide navbar links and show menu button */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;  /* Hide navbar links */
-    position: absolute;
-    top: 100%;   /* Position below navbar */
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+  }
+  
+  .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-900);
+  font-weight: 600;
   }
 
-  .nav-links.show {
-    display: flex;  /* Show menu when active */
-  }
-
-  .nav-links a {
-    padding: 1rem;
-    display: block;
-    border-bottom: 1px solid #ddd; /* Separator */
-  }
-
+  .logo-icon {
+    color: var(--primary);
+    }
+    
+    .nav-links {
+    display: none;
+    }
+    
+    .nav-links a {
+    color: var(--gray-600);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    }
+  
+    .nav-links a:hover,
+    .nav-links a.active {
+    color: var(--primary);
+    }
+    
+  
   .mobile-menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1.5rem;  /* Make it big enough */
-    color: var(--gray-500);
-    z-index: 1001;
-  }
-}
-
-
-  /* .mobile-menu-btn {
   display: block;
   background: none;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--gray-500);
-  } */
+  }
   
   /* Hero Section */
   .hero {
