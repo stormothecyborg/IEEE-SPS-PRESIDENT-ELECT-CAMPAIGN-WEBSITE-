@@ -30,12 +30,13 @@
   color: var(--gray-700);
   }
   
-  .container {
+/* Container */
+.container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  }
-  
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -45,9 +46,9 @@
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,48 +56,87 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  }
-  
-  .nav-logo {
+  width: 100%; /* Ensure it doesn't exceed the screen width */
+}
+
+/* Logo */
+.nav-logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--gray-900);
   font-weight: 600;
-  }
+}
 
-  .logo-icon {
-    color: var(--primary);
-    }
-    
-    .nav-links {
-    display: none;
-    }
-    
-    .nav-links a {
-    color: var(--gray-600);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: color 0.2s;
-    }
-  
-    .nav-links a:hover,
-    .nav-links a.active {
-    color: var(--primary);
-    }
-    
-  
-  .mobile-menu-btn {
-  display: block;
+.logo-icon {
+  color: var(--primary);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--gray-600);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* Hamburger Button */
+.mobile-menu-btn {
+  display: none; /* Hidden by default */
   background: none;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--gray-500);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 500;
   }
-  
+
+  .nav-links.open {
+    display: flex; /* Show when the menu is toggled */
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-menu-btn {
+    display: block; /* Show the hamburger button */
+  }
+}
+
+
   /* Hero Section */
   .hero {
   padding: 8rem 0 4rem;
@@ -417,7 +457,7 @@
   color: var(--gray-500);
   }
   
-  /*statement*/
+  
   .statement {
   padding: 2rem 0;
   background: rgb(7, 24, 61)
@@ -566,15 +606,13 @@
   margin-bottom: 3rem;
   }
   
-  .endorsements-grid {
-  display: grid;
-  gap: 2rem;
-  }
+ 
   
   .endorsement-card {
   background: var(--yellow-50);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  width: 100%; 
   }
   
   .quote {
@@ -724,11 +762,12 @@
   }
   
   .endorsement-image img {
-  width: 200px;  /* Adjust size as needed */
+  max-width: 200px;  /* Adjust size as needed */
   height: auto;
   /* Makes it circular */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 3px solid var(--primary);
+  width: 100%; 
   }
   
   .about-buttons {

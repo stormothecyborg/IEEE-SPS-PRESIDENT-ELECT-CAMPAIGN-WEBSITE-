@@ -7,6 +7,14 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>
+    // JavaScript to toggle the mobile menu
+document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('open'); // Toggle the 'open' class to show/hide the menu
+});
+
+  </script>
 <nav class="navbar">
 <div class="nav-container">
 <div class="nav-logo">
