@@ -284,7 +284,18 @@
     background: white; /* White background on hover */
     color: rgb(7, 24, 61); /* Dark text on hover */
     }
-    
+
+    .contact-info a {
+      color: white !important;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      }
+      
+      .contact-info a:hover {
+      color: var(--primary); /* Change color on hover */
+      }
+
   @media (max-width: 600px) {
   .card-grid {
   grid-template-columns: 1fr;
@@ -747,16 +758,7 @@
   color: white;
   }
   
-  .contact-info a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-  }
-  
-  .contact-info a:hover {
-  color: var(--primary); /* Change color on hover */
-  }
+ 
   
   .contact-icon {
   width: 24px;
