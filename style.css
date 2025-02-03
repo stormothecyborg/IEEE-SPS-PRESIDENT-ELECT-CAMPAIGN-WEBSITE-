@@ -131,7 +131,7 @@ body {
   font-size: 1.25rem;
   color: var(--gray-500);
   margin-bottom: 2rem;
-  line-height: 0.5;
+  line-height: 1.5;
 }
 
 .cta-button {
