@@ -30,6 +30,16 @@
   color: var(--gray-700);
   }
   
+  @media (max-width: 768px) {
+    .nav-container {
+      padding: 0 0.5rem; /* Reduce padding */
+    }
+  
+    .mobile-menu-btn {
+      right: 0.5rem; /* Move hamburger closer to the right edge */
+    }
+  }
+  
 /* Container */
 .container {
   max-width: 1280px;
@@ -814,4 +824,20 @@
   object-fit: contain;
   }
   
+}
+
+@media (max-width: 600px) {
+  .endorsements-grid {
+    flex-direction: column; /* Stack content */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+  }
+
+  .endorsement-image img {
+    max-width: 150px; /* Reduce image size */
+  }
+
+  .endorsement-card {
+    width: 90%; /* Ensure it doesn't go too wide */
+  }
 }
