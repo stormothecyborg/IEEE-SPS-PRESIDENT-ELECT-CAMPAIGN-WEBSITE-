@@ -1,479 +1,675 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. K.V.S Hari - IEEE SPS President-Elect Candidate</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
-          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-        </svg>
-        <span>Dr. K.V.S Hari</span>
-      </div>
-      <button class="mobile-menu-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-      <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#honours">Honours</a>
-        <a href="#activities">IEEE-Activities</a>
-        <a href="#vision">Vision & Goals</a>
-        <a href="#experience">Experience</a>
-        <a href="#endorsements">Endorsements</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+/* Base styles */
+:root {
+  --primary: #ebb325;
+  --primary-dark:#ebb325;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+}
 
-  <main>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <h1>
-          <span>K.V.S</span>
-          <span class="highlight">Hari</span>
-        </h1>
-        <h2>
-          <span>Strengthening Signal Processing Community</span>
-          <span class="highlight">Together</span>
-        </h2>
-        <p>Candidate for IEEE Signal Processing Society President-Elect (2025-27)</p>
-        <p>Director, Centre for Brain Research at IISc | Professor, Department of ECE, IISc</p>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        
-        <a href="#vision" class="cta-button">Voting begins on 6th February, 2025</a>
-        <!-- <p> Voting begins on 6th Feb 2025</p> -->
-      </div>
-    </section>
+html {
+  scroll-behavior: smooth;
+}
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div class="about-image">
-            <img src="https://i.ibb.co/9SspKS6/image-1.png" alt="Dr. Elena Richardson">
-          </div>
-          <div class="about-content">
-            <p>K.V.S. Hari is the Director of the Centre for Brain Research and a Professor in the Department of Electrical Communication Engineering at the Indian Institute of Science (IISc).</p>
-            <p>He specializes in Signal Processing with applications to wireless communications, integrated sensing and communication, healthcare, and neuroscience.</p>
-            <p>Hari is well-positioned to lead the society and drive its mission forward with over 30 years of experience as a member of the IEEE Signal Processing Society. His commitment to expand the SPS membership base resulted in a significant increase in SPS membership in R10 (increased from 4491 in 2017 to 6154 in 2019) during his tenure as R10 SPS Regional Director-at-Large. He continued his energetic efforts as SPS Vice President-Membership, triggering a similar growth across all regions by leading special initiatives for students, women, and industry professionals, in Africa, Latin America, and Asia.</p>
-          </div>
-        </div>
-        <div class = "stupendous">
-          <h2> His stupendous efforts contributed to a few landmark moments for SPS:</h2>
-        </div>
-          <div class="stats-grid">
-              <div class="stat-card">
-                <p class="stat-number"></p>
-                <p class="stat-label"> 20,000+ members during the 75th anniversary of SPS in 2023.</p>
-              </div>
-              <div class="stat-card">
-                <p class="stat-number"></p>
-                <p class="stat-label"> More than 200 SPS student branch chapters globally.</p>
-              </div>
-              <div class="stat-card">
-                <p class="stat-number"></p>
-                <p class="stat-label">General Chair for ICASSP in India, 2025 </p>
-              </div>
-              <div class="stat-card">
-                <p class="stat-number"></p>
-                <p class="stat-label">Launch of SPS Student Scholarship Program.</p>
-              </div>
-          </div>
-     
-      <div class="about-end">
-        <p>His service to SPS has also included being a member of the Signal Processing Theory and Methods (SPTM) Technical Committee and Signal and Array Processing Methods (SAM) Technical Committee. His leadership qualities have been recognised by IEEE MGA which awarded him the 2018 IEEE MGA Leadership Award.</p>
-    </div>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--gray-700);
+}
 
-    <div class="about-buttons">
-      <a href="https://ece.iisc.ac.in/hari/research-teachings/" class="custom-button">Research</a>
-      <a href="https://ece.iisc.ac.in/hari/publications-patents/" class="custom-button">Publications</a>
-    </div>
-    
-    </section>
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-     <!-- Honours -->
-     <section id="honours" class="honours">
-      <div class="container">
-        <h2>Honours</h2>
-        <div class="card-grid">
-          <div class="card">
-            <img src="https://i.ibb.co/S4WrfpDC/image-6-removebg-preview.png" alt="Card 1" class="card-image">
-            <h3 class="card-headline">2022 Fellow, Indian National Science Academy (INSA)</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/dsVJY0Yw/image-7-removebg-preview.png" alt="Card 2" class="card-image">
-            <h3 class="card-headline">2019 IISc Alumni Award for Research in Engineering</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/NR0TQQp/image-8-removebg-preview.png" alt="Card 3" class="card-image">
-            <h3 class="card-headline">2018 IEEE MGA Leadership Award</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/T5NVW0g/image-9-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">2016 Fellow, Indian National Academy of Engineering (INAE)</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/NR0TQQp/image-8-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">2015 Fellow, IEEE</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/nWkkTvD/image-10-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">2015 Distinguished Alumnus Award, Osmania University College of Engineering,
-              Hyderabad
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
-            </h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/TqdbHJb0/image-11-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">2014 IETE S V C Aiya Memorial Award for Excellence in Telecom Education</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/dsVJY0Yw/image-7-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">1999 Dr. S. K. Chatterjee Award, Division of Electrical Sciences, IISc</h3>
-          </div>
-          <div class="card">
-            <img src="https://i.ibb.co/TqdbHJb0/image-11-removebg-preview.png" alt="Card 4" class="card-image">
-            <h3 class="card-headline">1998 Fellow, IETE</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- IEEE Activities -->
-    <section id="activities" class="activities">
-      <div class="container">
-        <h2>IEEE Activities</h2>
-        <div class="card-grid">
-          <div class="card-bg">
-            <img src="https://i.ibb.co/G4L5n1VT/image-7-removebg-preview.png" alt="Card 2" class="card-image-bg">
-            <h3 class="card-headline-bg">IEEE SPS</h3>
-              <ul>
-                <li>General Chair – ICASSP 2025</li>
-                <li>Vice President – Membership, Board of Governors, IEEE Signal Processing Society (1 Jan 2020 – 31 Dec 2022)</li>
-                <li>Member, Board of Governors, IEEE Signal Processing Society as Regional Director-at-Large (R10), (1 Jan 2018 – 31 Dec 2019)</li>
-                <li>Member of IEEE Signal Processing Society’s Signal Processing Theory and Methods Technical Committee (SPTM-TC) (2014 – 2019)</li>
-                <li>Associate Member of IEEE Signal Processing Society’s Sensor Array and Multichannel Technical Committee (SAM-TC) (2010 – Present).</li>
-                <li>Chair, IEEE Signal Processing Society Bangalore Chapter in 2005, 2011, 2012, 2013. Part of the Founding team of the Bangalore Chapter in 2001.</li>
-                <li>Active member of all activities of the Bangalore chapter in organizing International conferences (SPCOM series), SP-Connect, an activity for connecting students and technologists.
-                </li>
-              </ul>
-          </div>
-          <div class="card-bg">
-            <img src="https://i.ibb.co/35gTFLM0/image-8.png" alt="Card 1" class="card-image-bg">
-            <h3 class="card-headline-bg">IEEE</h3>
-            <ul>
-              <li>Members, IEEE – FELLOW committee (2023-2024)</li>
-              <li>Chair of the IEEE Ad-hoc committee on India Strategy (2017)</li>
-              <li>Vice-Chair, IEEE Bangalore Section (2012, 2013)</li>
-              <li>General Chair, 2013 IEEE International Conference on Electronics, Computing and Communication Technologies (IEEE CONECCT), 17-19 Jan 2013.</li>
-              <li>General Chair, 2014 IEEE International Conference on Electronics, Computing and Communication Technologies (IEEE CONECCT), 6-7 Jan 2014.</li>
-              <li>Member, Industry Forum and Exhibition Committee, International Conference on Communications (ICC 2013), 9-13 June 2013, Budapest, Hungary</li>
-              <li>Member of IEEE 802.16 working group in the IEEE Standards group. Initiated the work for IEEE 802.16 (WiMAX) standard on wireless channel models, 1999-2001.</li>
-              <li>Member of the IEEE University Programs Ad-hoc Committee (UPC), IEEE Educational Activities Board (IEEE-EAB), USA. The mission of the UPC is “To promote and enhance the content and delivery of engineering education globally.” Nominee is the only member from India (2010 – present).</li>
-              <li>Member of Technical Program Committees of several International conferences supported by IEEE like IEEE ICC, <a href="https://ieee-conecct.org/">IEEE CONECCT</a>, EUSIPCO, VTC, Pernets.</li>
-              <li>Reviewer of the papers submitted to IEEE journals (TSP, SPL, JSTSP) and IEEE conferences.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Vision Section -->
-<section id="vision" class="vision">
-  <div class="container">
-    <h2>Vision & Goals</h2>
-    <p class="section-subtitle">
-      Strengthen the community that promotes signal processing to advance technology for humanity.
-    </p>
-    <p class="section-subtitle1">
-      Toward this goal, I pledge to pursue the following objectives:
-    </p>
-
-    <div class="vision-grid">
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Enable Icon (No Change) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="6"></circle>
-            <circle cx="12" cy="12" r="2"></circle>
-          </svg>
-        </div>
-        <h3>Enable</h3>
-        <p>Active engagement of all stakeholders to make SPS a diverse, inclusive, equitable, sustainable and vibrant community./p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Expand Icon (No Change) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-        </div>
-        <h3>Expand</h3>
-        <p>The community by reaching out to professionals in other disciplines that use signal processing.</p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Educate Icon (New - Book) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M20 22H6.5A2.5 2.5 0 0 1 4 19.5V5a2 2 0 0 1 2-2h14"></path>
-            <path d="M20 2v20"></path>
-          </svg>
-        </div>
-        <h3>Educate</h3>
-        <p>The next generation of technologists about the power of signal processing tools.</p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Embrace Icon (No Change) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="7"></circle>
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-          </svg>
-        </div>
-        <h3>Embrace</h3>
-        <p>New disruptive tools and technology innovations.</p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Enhance Icon (New - Trending Up) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="17 6 22 6 22 11"></polyline>
-            <path d="M22 6l-7.5 7.5-5-5L2 18"></path>
-          </svg>
-        </div>
-        <h3>Enhance</h3>
-        <p>The technical level of conferences and journals to make them the “go-to” destination for researchers, industry professionals and policy makers.</p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Encourage Icon (New - Handshake) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 17l-4-4m0 0-4-4m4 4h16"></path>
-            <path d="M22 12l-4-4m0 0-4-4m4 4H2"></path>
-          </svg>
-        </div>
-        <h3>Encourage</h3>
-        <p>Strong industry-academia relationships that promote innovation.</p>
-      </div>
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Lightbulb Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 18h6"></path>
-            <path d="M10 22h4"></path>
-            <path d="M12 2a7 7 0 0 0-7 7c0 2.3.8 4.4 2.2 6l.3.3a1.2 1.2 0 0 1 .5 1V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-.7c0-.4.2-.8.5-1l.3-.3a8.5 8.5 0 0 0 2.2-6 7 7 0 0 0-7-7Z"></path>
-          </svg>
-        </div>
-        <h3>Empower</h3>
-        <p>Chapters, technical committees, and industry groups to provide enhanced member benefits at affordable cost.</p>
-      </div>
-      
-
-      <div class="vision-card">
-        <div class="vision-icon">
-          <!-- Engage Icon (New - Message Chat) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            <line x1="10" y1="8" x2="14" y2="8"></line>
-            <line x1="10" y1="12" x2="14" y2="12"></line>
-          </svg>
-        </div>
-        <h3>Engage</h3>
-        <p>With the community in an open, transparent, and ethical manner.</p>
-      </div>
-    </div>
-  </div>
-</section>
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 
-    <section id="statement" class="statement">
-      <div class="container">
-        <h2>Statement</h2>
-         <div class="state">
-          <p>The future of signal processing involves embracing new application areas, triggering the development of new theoretical and practical tools, contributing to the body of knowledge and enabling innovation.</p>
-        <p>The effective education of the next generation signal processing researchers and practitioners is critical for rapid creation and deployment of emerging technologies. SPS must play a key role in accelerating the pace of continuing education, at scale. My priority will be to enable access to curated multimedia education content by leveraging the talented SPS educator community in academia and industry, and to empower SPS chapters to organize educational events, for students of all ages and preparation, with active collaboration between industry and academia to address problems with local context.</p> 
-      <p> Excellence in SP research is vital. Organizing affordable, inclusive, accessible, sustainable, and joyous conferences is imperative. SPS journals need to be the destination of highest quality work and policies for quick reviewing and affordability will be put in place. </p>  
-      <p>Innovation is key and disruptive ideas will be encouraged in all SPS activities to create breakthroughs in technology solutions for challenging problems of relevance to humanity. An annual networking event inviting thought leaders, futurists, distinguished academicians, smart innovators and funding agencies will be organized to create a vibrant community that will shape the technology landscape of the future.</p>  
-      <p>Standardization is vital for the rapid adoption of technologies and a framework to organize workshops on standardization with the active involvement of standards bodies, industry practitioners and academia at SPS chapters, and conferences will be established.</p>
-      <p>Diversity, equity and Inclusion are important cornerstones of our Society and I will support and enhance processes to imbibe and ingrain this ethos in our volunteers and staff. We will make SPS an inviting place for women, underrepresented groups, and others to express freely and to pursue excellence joyfully!</p>
-      <p>My substantial experience as a volunteer in different positions in my professional career and in the IEEE and SPS have prepared me to take this global responsibility of propelling the society to new heights. We will do this as a team and in the spirit of service to “be good and do good”.</p>
-    </div>
-    </section>
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-900);
+  font-weight: 600;
+}
 
-<!-- Experience Section -->
-<section id="experience" class="experience">
-  <div class="container">
-    <h2>Experience & Leadership</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="https://i.ibb.co/yBRxBLpK/image.png" alt="CBR IISc Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Director, at CBR-IISc</h3>
-          <span class="year">Jan 2024 - Present</span>
-        </div>
-      </div>
+.logo-icon {
+  color: var(--primary);
+}
 
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="https://i.ibb.co/rNN5MM3/image.png" alt="IISc Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Registrar, IISc</h3>
-          <span class="year">16 May 2020 - 21 March 2021</span>
-        </div>
-      </div>
+.nav-links {
+  display: none;
+}
 
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="https://i.ibb.co/mC9vV6ft/image.png" alt="Stanford University Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Visiting Associate Professor</h3>
-          <p>Stanford University, Stanford, USA</p>
-          <span class="year">1999 - 2000</span>
-        </div>
-      </div>
+.nav-links a {
+  color: var(--gray-600);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
 
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="https://i.ibb.co/R4YVpNNC/image.png" alt="KTH Sweden Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Affiliated Professor</h3>
-          <p>Department of Signal Processing, Royal Institute of Technology (KTH), Sweden</p>
-          <span class="year">2010 - 2016</span>
-          <h3>Visiting Faculty</h3>
-          <span class="year">1995, 2002</span>
-        </div>
-      </div>
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
 
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="https://i.ibb.co/H82DJVP/image.png" alt="Aalto University Logo">
-        </div>
-        <div class="timeline-content">
-          <h3>Visiting Professor</h3>
-          <p>Aalto University, Espoo, Finland</p>
-          <span class="year">2002</span>
-        </div>
-      </div>
+.mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--gray-500);
+}
 
-    </div>
-  </div>
-</section>
+/* Hero Section */
+.hero {
+  padding: 8rem 0 4rem;
+  background: white;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--gray-900);
+  margin-bottom: 1.25rem;
+}
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 0.9;
+  color: var(--gray-900);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.hero h1 .highlight {
+  color: var(--primary);
+}
+.hero h2 .highlight {
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--gray-500);
+  margin-bottom: 2rem;
+  line-height: 0.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background: var(--primary-dark);
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+  background: rgb(7, 24, 61)
+}
+
+.about h2 {
+  text-align: justify;
+  font-size: 2.25rem;
+  color: #ebb325;
+  margin-bottom: 3rem;
+  /* text-decoration: underline; */
+}
+
+.about-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.about-image img {
+  width: 85%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: white;
+  text-align: justify;
+}
+.stupendous h2{
+  text-align: center;
+  font-size: 1.25rem;
+  color: #ebb325;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+.about-end p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 10px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+/* Vision Section */
+.vision {
+  padding: 4rem 0;
+  background: var(--gray-50);
+}
+
+.vision h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: rgb(7, 24, 61);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+.section-subtitle1 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(7, 24, 61);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.vision-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.vision-card {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.vision-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #ebb325;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.vision-card h3 {
+  font-size: 1.25rem;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.vision-card p {
+  color: var(--gray-500);
+}
+
+/statement/
+.statement {
+  padding: 2rem 0;
+  background: rgb(7, 24, 61)
+}
+
+.statement h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #ebb325;
+  margin-bottom: 3rem;
+  /* text-decoration: underline; */
+}
+
+.statement p {
+  text-align: center;
+  font-size: 1.25rem;
+  text-align: justify;
+  color: white;
+  margin-bottom: 1.5rem;
+  /* text-decoration: underline; */
+}
+
+/* Experience Section */
+.experience {
+  padding: 4rem 0;
+  background: white;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--gray-900);
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gray-200);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.timeline-icon img {
+  width: 50px; /* Reduce size */
+  height: 50px;
+  border-radius: 50%; 
+  object-fit: contain; /* Ensures logos fit well */
+  background: white; /* Ensures good visibility */
+  padding: 3px; /* Adds spacing around the logo */
+}
 
 
-    <!-- Publications Section -->
-    <!-- <section id="publications" class="publications">
-      <div class="container">
-        <h2>Selected Publications</h2>
-        <div class="publications-grid">
-          <div class="publication-card">
-            <h3>Advanced Signal Processing in 5G Networks</h3>
-            <p>IEEE Transactions on Signal Processing</p>
-            <span class="year">2023</span>
-          </div>
-          <div class="publication-card">
-            <h3>Deep Learning for Wireless Communications</h3>
-            <p>IEEE Signal Processing Magazine</p>
-            <span class="year">2022</span>
-          </div>
-          <div class="publication-card">
-            <h3>Next-Generation Signal Processing Systems</h3>
-            <p>Proceedings of the IEEE</p>
-            <span class="year">2021</span>
-          </div>
-        </div>
-      </div>
-    </section>
+.timeline-content h3 {
+  font-size: 1.25rem;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+}
 
-    <! Endorsements Section -->
-     <section id="endorsements" class="endorsements">
-      <div class="container">
-        <h2>Endorsements</h2>
-        <div class="endorsements-grid">
-          <div class="endorsement-card">
-            <p class="quote">"I enthusiastically endorse Prof. K.V.S. Hari for SPS President-Elect (2025-27). My nearly four-decade acquaintance with him—from his student days and time at Stanford University to his current leadership of the Centre for Brain Research—demonstrates his exceptional capabilities. His groundbreaking contributions to signal processing, coupled with his proven academic leadership and three-decade commitment to the SPS, make him uniquely qualified to lead the Society. His visionary leadership will significantly benefit the SPS, fostering a new era of collaboration between signal processing, brain science and AI,  driving growth in membership and impact."</p>
-            <div class="endorsement-image">
-              <img src="https://i.ibb.co/sdrF3wtc/Whats-App-Image-2025-02-01-at-16-05-05-6c58d616.jpg" alt="Professor Image">
-            </div>
-            <div class="author">
-              <p class="name">Prof. A Paulraj </p>
-              <p class="title">Emeritus Professor, Stanford University</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> 
+.timeline-content p {
+  color: var(--gray-500);
+}
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact</h2>
+.timeline-content .year {
+  font-size: 0.875rem;
+  color: var(--primary);
+}
 
-    <div class="contact-info">
-      <p>
-        <span class="contact-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16v16H4z"></path>
-            <path d="M22 6l-10 7L2 6"></path>
-          </svg>
-        </span>
-        <a href="mailto:hari@iisc.ac.in">hari@iisc.ac.in</a>
-      </p>
-      <p>
-        <span class="contact-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92V19a2 2 0 0 1-2 2h-3a16 16 0 0 1-7-7v-3a2 2 0 0 1 2-2h2.08"></path>
-            <path d="M14 3h7v7"></path>
-          </svg>
-        </span>
-        <a href="tel:+918022932745">+91 80 2293 2745</a>
-      </p>
-      <p>
-        <span class="contact-icon">
-          <img src="https://i.ibb.co/4ncJTVh7/image.png" alt="LinkedIn Icon">
-        </span>
-        <a href="https://www.linkedin.com/in/kvshari/" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </div>
-</section>
+/* Publications Section */
+.publications {
+  padding: 4rem 0;
+  background: var(--gray-50);
+}
 
-  </main>
+.publications h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--gray-900);
+  margin-bottom: 3rem;
+}
 
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Dr. K.V.S Hari. All rights reserved.</p>
-    </div>
-  </footer>
+.publications-grid {
+  display: grid;
+  gap: 2rem;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.publication-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card h3 {
+  font-size: 1.25rem;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.publication-card p {
+  color: var(--gray-500);
+}
+
+.publication-card .year {
+  font-size: 0.875rem;
+  color: var(--primary);
+}
+
+/* Endorsements Section */
+.endorsements {
+  padding: 4rem 0;
+  background: white;
+}
+
+.endorsements h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--gray-900);
+  margin-bottom: 3rem;
+}
+
+.endorsements-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.endorsement-card {
+  background: var(--gray-50);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 90%; /* Ensures content doesn't break layout */
+}
+
+.quote {
+  font-style: italic;
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+
+.author {
+  text-align: center; /* Centers text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically if needed */
+}
+
+
+.author .name {
+  font-weight: 500;
+  color: var(--gray-900);
+  
+}
+
+.author .title {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0;
+  background: rgb(7, 24, 61);
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #ebb325;
+  margin-bottom: 3rem;
+}
+.contact p{
+  color: white;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-icon {
+  color: var(--gray-400);
+  transition: color 0.2s;
+}
+
+.contact-icon:hover {
+  color: var(--gray-500);
+}
+
+/* Footer */
+footer {
+  background: gray;
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white; /* White border */
+  color: white; /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 25px; /* Rounded corners */
+  background: transparent; /* Transparent background */
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background: white; /* White background on hover */
+  color: rgb(7, 24, 61); /* Dark text on hover */
+}
+
+.contact-info a {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--primary); /* Change color on hover */
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline::before {
+    left: calc(50% - 1px);
+  }
+
+  .timeline-item {
+    width: 50%;
+    padding-left: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 3rem;
+    margin-left: auto;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 3rem;
+    margin-right: auto;
+  }
+
+  .timeline-icon {
+    left: -1.5rem;
+  }
+
+  .timeline-item:nth-child(even) .timeline-icon {
+    left: auto;
+    right: -1.5rem;
+  }
+
+  .timeline-content {
+    margin-left: 5rem; /* Push content further from the center */
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: 6rem; /* Move left-side content further right */
+    }
+  
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-right: 6rem; /* Move right-side content further left */
+    }
+  }
+  
+
+  .publications-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .endorsements-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    max-width: 100%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .endorsement-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .endorsement-image img {
+    width: 200px;  /* Adjust size as needed */
+    height: auto;
+     /* Makes it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--primary);
+  }
+  
+  .about-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 1rem; /* Add space between buttons */
+    margin-top: 2rem;
+  }
+  
+
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* Space between icon and text */
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+
+  
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-icon img {
+    width: 24px; /* Size of LinkedIn image */
+    height: 24px;
+    object-fit: contain;
+  }
+  
+
+  
+}

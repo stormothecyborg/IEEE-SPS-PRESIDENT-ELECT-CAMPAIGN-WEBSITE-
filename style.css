@@ -52,10 +52,12 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  max-width: 1280px;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 
 .nav-logo {
   display: flex;
@@ -107,14 +109,14 @@ body {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  color: rgb(7, 24, 61);
+  color: var(--gray-900);
   margin-bottom: 1.25rem;
 }
 .hero h2 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 0.9;
-  color: rgb(7, 24, 61);
+  color: var(--gray-900);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -129,7 +131,7 @@ body {
   font-size: 1.25rem;
   color: var(--gray-500);
   margin-bottom: 2rem;
-  line-height: 1.5;
+  line-height: 0.5;
 }
 
 .cta-button {
@@ -220,107 +222,6 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--gray-900);
-}
-/* honours section */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-.honours{
-  padding: 4rem 0;
-}
-.honours h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  color: rgb(7, 24, 61);
-  margin-bottom: 3rem;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.card-image {
-  width: 5rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-}
-
-.card-headline {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Activities */
-.activities
-{
-  background: rgb(7, 24, 61);
-  padding: 4rem 0;
-}
-
-.activities h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  color: #ebb325;
-  margin-bottom: 3rem;
-  /* text-decoration: underline; */
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.card-bg {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 2rem 4rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.card-image-bg {
-  width: 8rem;
-  height: 8rem;
-  object-fit: contain;
-}
-
-.card-headline-bg {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-ul a{
-  text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Vision Section */
@@ -416,7 +317,7 @@ ul a{
 .experience h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: rgb(7, 24, 61);
+  color: var(--gray-900);
   margin-bottom: 3rem;
 }
 
@@ -481,7 +382,7 @@ ul a{
 }
 
 /* Publications Section */
-/* .publications {
+.publications {
   padding: 4rem 0;
   background: var(--gray-50);
 }
@@ -518,7 +419,7 @@ ul a{
 .publication-card .year {
   font-size: 0.875rem;
   color: var(--primary);
-} */
+}
 
 /* Endorsements Section */
 .endorsements {
@@ -529,7 +430,7 @@ ul a{
 .endorsements h2 {
   text-align: center;
   font-size: 2.25rem;
-  color: rgb(7, 24, 61);
+  color: var(--gray-900);
   margin-bottom: 3rem;
 }
 
@@ -539,9 +440,10 @@ ul a{
 }
 
 .endorsement-card {
-  background: var(--yellow-50);
+  background: var(--gray-50);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  max-width: 90%; /* Ensures content doesn't break layout */
 }
 
 .quote {
@@ -607,8 +509,38 @@ footer {
   background: gray;
   padding: 3rem 0;
   text-align: center;
-  color: white;
+  color: var(--gray-400);
 }
+
+.custom-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white; /* White border */
+  color: white; /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 25px; /* Rounded corners */
+  background: transparent; /* Transparent background */
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background: white; /* White background on hover */
+  color: rgb(7, 24, 61); /* Dark text on hover */
+}
+
+.contact-info a {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--primary); /* Change color on hover */
+}
+
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -618,7 +550,7 @@ footer {
   }
 
   .mobile-menu-btn {
-    display: block;
+    display: none;
   }
 
   .about-grid {
@@ -680,7 +612,7 @@ footer {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center content horizontally */
-    max-width: 600px; /* Adjust width as needed */
+    max-width: 100%; /* Adjust width as needed */
     margin: 0 auto; /* Center the grid */
   }
   
@@ -702,30 +634,9 @@ footer {
     justify-content: center; /* Center the buttons */
     gap: 1rem; /* Add space between buttons */
     margin-top: 2rem;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center-align buttons */
-    gap: 0.5rem; /* Reduce gap for better spacing */
   }
   
-  .custom-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border: 2px solid white; /* White border */
-    color: white; /* White text */
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 25px; /* Rounded corners */
-    background: transparent; /* Transparent background */
-    transition: all 0.3s ease-in-out;
-    width: 80%; /* Make buttons wider on mobile */
-    text-align: center; /* Center text */
-  }
-  
-  .custom-button:hover {
-    background: white; /* White background on hover */
-    color: rgb(7, 24, 61); /* Dark text on hover */
-  }
+
   
   .contact-info {
     display: flex;
@@ -743,16 +654,7 @@ footer {
     color: white;
   }
   
-  .contact-info a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .contact-info a:hover {
-    color: var(--primary); /* Change color on hover */
-  }
+
   
   .contact-icon {
     width: 24px;
