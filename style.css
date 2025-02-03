@@ -36,8 +36,8 @@
   padding: 0 1rem;
   }
   
-/* Navigation */
-.navbar {
+  /* Navigation */
+  .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,39 +64,44 @@
   color: var(--gray-900);
   font-weight: 600;
   }
-
+  
   .logo-icon {
-    color: var(--primary);
-    }
-    
-    .nav-links {
-    display: none;
-    }
-    
-    .nav-links a {
-    color: var(--gray-600);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: color 0.2s;
-    }
+  color: var(--primary);
+  }
   
-    .nav-links a:hover,
-    .nav-links a.active {
-    color: var(--primary);
-    }
-    
+  .nav-links {
+  display: none;
+  }
   
-  .mobile-menu-btn {
+  .nav-links a {
+  color: var(--gray-600);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+  color: var(--primary);
+  }
+  
+/* Hamburger button */
+.mobile-menu-btn {
   display: block;
   background: none;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--gray-500);
-  }
-  
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+
   /* Hero Section */
   .hero {
   padding: 8rem 0 4rem;
@@ -417,7 +422,7 @@
   color: var(--gray-500);
   }
   
-  /*statement*/
+  
   .statement {
   padding: 2rem 0;
   background: rgb(7, 24, 61)
@@ -566,15 +571,13 @@
   margin-bottom: 3rem;
   }
   
-  .endorsements-grid {
-  display: grid;
-  gap: 2rem;
-  }
+ 
   
   .endorsement-card {
   background: var(--yellow-50);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  width: 100%; 
   }
   
   .quote {
@@ -724,11 +727,12 @@
   }
   
   .endorsement-image img {
-  width: 200px;  /* Adjust size as needed */
+  max-width: 200px;  /* Adjust size as needed */
   height: auto;
   /* Makes it circular */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 3px solid var(--primary);
+  width: 100%; 
   }
   
   .about-buttons {
