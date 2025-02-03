@@ -265,6 +265,26 @@
   font-size: 1.1rem;
   }
   
+  .custom-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid white; /* White border */
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px; /* Rounded corners */
+    background: transparent; /* Transparent background */
+    transition: all 0.3s ease-in-out;
+    width: 80%; /* Make buttons wider on mobile */
+    text-align: center; /* Center text */
+    }
+    
+    .custom-button:hover {
+    background: white; /* White background on hover */
+    color: rgb(7, 24, 61); /* Dark text on hover */
+    }
+    
   @media (max-width: 600px) {
   .card-grid {
   grid-template-columns: 1fr;
@@ -709,25 +729,7 @@
   gap: 0.5rem; /* Reduce gap for better spacing */
   }
   
-  .custom-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid white; /* White border */
-  color: white; /* White text */
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 25px; /* Rounded corners */
-  background: transparent; /* Transparent background */
-  transition: all 0.3s ease-in-out;
-  width: 80%; /* Make buttons wider on mobile */
-  text-align: center; /* Center text */
-  }
-  
-  .custom-button:hover {
-  background: white; /* White background on hover */
-  color: rgb(7, 24, 61); /* Dark text on hover */
-  }
+ 
   
   .contact-info {
   display: flex;
