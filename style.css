@@ -795,40 +795,34 @@
   .contact-info {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    gap: 1rem; /* Add space between items */
-  }
-  
-  .contact-info p {
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+    }
+    
+    .contact-info p {
     display: flex;
-    align-items: center; /* Align icon and text on the same line */
+    align-items: center;
     gap: 0.75rem; /* Space between icon and text */
-    margin: 0.5rem 0; /* Space between each item */
+    margin: 0.5rem 0;
     color: white;
-  }
-  
-  .contact-icon {
+    }
+    
+   
+    
+    .contact-icon {
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px; /* Icon size */
+    }
+    
+    .contact-icon img {
+    width: 24px; /* Size of LinkedIn image */
     height: 24px;
-  }
-  
-  .contact-icon img {
-    width: 24px; /* Icon image width */
-    height: 24px; /* Icon image height */
-    object-fit: contain; /* Maintain aspect ratio */
-  }
-  
-  .contact-info a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
+    object-fit: contain;
+    }
   
   
 }
